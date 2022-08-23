@@ -21,6 +21,10 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         header("Location: index.php?error=Password is required");
 	    exit();
 	}else{
+		// hashing the password
+        $pass = md5($pass);
+
+        
 		$sql = "SELECT * FROM users WHERE user_name='$uname' AND password='$pass'";
 
 		$result = mysqli_query($conn, $sql);
@@ -30,6 +34,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             if ($row['user_name'] === $uname && $row['password'] === $pass) {
             	$_SESSION['user_name'] = $row['user_name'];
             	$_SESSION['name'] = $row['name'];
+            	$_SESSION['email'] = $row['email'];
+            	$_SESSION['dob'] = $row['dob'];
             	$_SESSION['id'] = $row['id'];
             	header("Location: home.php");
 		        exit();

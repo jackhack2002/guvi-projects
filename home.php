@@ -12,6 +12,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 </head>
 <body>
      <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
+     <h1>Your Email is, <?php echo $_SESSION['email']; ?></h1>
+     <h1>Your DOB is, <?php echo $_SESSION['dob']; ?></h1>
      <a href="logout.php">Logout</a>
 </body>
 </html>
