@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Ji<!DOCTYPE html>
 <html>
 <head>
 	<title>LOGIN</title>
@@ -13,7 +13,7 @@
      	<label>User Name</label>
      	<input type="text" name="uname" placeholder="User Name"><br>
 
-     	<label>User Name</label>
+     	<label>Password</label>
      	<input type="password" name="password" placeholder="Password"><br>
 
      	<button type="submit">Login</button>
