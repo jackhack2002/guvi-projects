@@ -8,6 +8,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 <html>
 <head>
 	<title>HOME</title>
+     <link rel="icon" href="img/websitelogo.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
